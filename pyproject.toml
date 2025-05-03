@@ -1,16 +1,6 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
-dependencies = [
-  "re",
-  "pathlib",
-  "typing",
-  "bs4",
-	"PyPDF2",
-	"os",
-	"pandas",
-	"dataclasses"
-]
 
 [project]
 name = "oqa"
@@ -18,6 +8,11 @@ version = "0.1.2"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
+dependencies = [
+	"beautifulsoup4>=4.12.0",
+	"pypdf2>=3.0.0",
+	"pandas>=2.0.0",
+]
 
 [tool.setuptools]
 packages = ["oqa"]
