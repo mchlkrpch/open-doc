@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel", "bs4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oqa"
+version = "0.1.2"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.setuptools]
+packages = ["oqa"]

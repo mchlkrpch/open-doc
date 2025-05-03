@@ -8,6 +8,8 @@ import os
 import pandas as pd
 from dataclasses import dataclass
 
+DEFAULT_DATA_FLD_PT = Path(__file__).parent.parent / 'data'
+
 @dataclass
 class Row:
 	tp: str
@@ -25,7 +27,7 @@ class Row:
 			for key in ['tp', 'txt', 'src', 'q', 'a', 'set', 'domain']})
 
 class OpenDocQA:
-	def __init__(self, fld_pt: str):
+	def __init__(self, fld_pt: str=DEFAULT_DATA_FLD_PT):
 		"""
 		Initialize QA Dataset for RAG evaluation.
 		
