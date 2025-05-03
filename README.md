@@ -241,7 +241,7 @@ cd open-doc
 pip install -e ./ --force-reinstall
 ```
 
-Далее можно исопльзовать QA-датасет у себя локально:
+Далее можно исопльзовать QA-датасет у себя локально (_или проверить, запустив [demo.ipynb](./demo.ipynb)_)
 
 ```python3
 from oqa import OpenDocQA
