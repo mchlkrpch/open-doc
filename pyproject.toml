@@ -1,6 +1,16 @@
 [build-system]
-requires = ["setuptools", "wheel", "bs4"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+dependencies = [
+  "re",
+  "pathlib",
+  "typing",
+  "bs4",
+	"PyPDF2",
+	"os",
+	"pandas",
+	"dataclasses"
+]
 
 [project]
 name = "oqa"
